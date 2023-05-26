@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body{
+    background: #f9f7f7;
+  }
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.container {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+.F {
+    color: green;
+    font-weight: 900;
+}
+
+.m {
+    color: red;
+}
+
+.content h2 {
+    font-size: xx-large;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+.Agent {
+    border: 3px solid green;
+    height: 30px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: green;
+    font-weight: bold;
+}
+
+form .date {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.business {
+    color: green;
+}
+
+hr {
+    color: green;
+    height: 10%;
+    font-weight: bold;
+    font-size: 24px;
+
+}
+
+.owner {
+    display: flex;
+    justify-content: space-evenly;
+}
+.PAN{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.contact.contact2{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.file-upload {
+    width: 300px;
+    height: 150px;
+    border: 2px dashed #ccc;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .file-label {
+    font-size: 16px;
+  }
+  
+  .label-text {
+    color: #888;
+  }
+  
+  .file-input {
+    display: none;
+  }
+  .file-upload {
+    width: 100%;
+    max-width: 300px;
+  }
