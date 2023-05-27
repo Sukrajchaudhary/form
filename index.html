@@ -13,21 +13,20 @@
 
 <body>
     <div class="container">
-            <div class="content">
-                <h2 class="F">Fast <span class="m">money</span></h2>
-                <p>(A product of idea tech and solution Pvt. Ltd.)</p>
-                <div class="Agent">Agent Registration Form</div>
-            </div>
-        
+        <div class="content">
+            <h2 class="F">Fast <span class="m">money</span></h2>
+            <p>(A product of idea tech and solution Pvt. Ltd.)</p>
+            <div class="Agent">Agent Registration Form</div>
+        </div>
+
         <form action="">
             <div class="business">
                 <div class="date row">
                     <div class="col-auto">
-                        <label for="inputPassword6" class="col-form-label">Date:</label>
+                        <label for="date" class="col-form-label">Date:</label>
                     </div>
                     <div class="col-auto">
-                        <input type="date" id="inputPassword6" class="form-control"
-                            aria-describedby="passwordHelpInline" />
+                        <input type="date" id="date" class="form-control" aria-describedby="passwordHelpInline" />
                     </div>
                     <h3 class="business">Business Details:</h3>
                     <div class="row g-2">
@@ -41,7 +40,7 @@
                     </div>
                     <div class="row g-2">
                         <div class="col-auto">
-                            <label for="inputPassword6" class="col-form-label">Business Name:</label>
+                            <label for="inputPassword6" class="col-form-label">Business Type:</label>
                         </div>
                         <div class="col-sm-10">
                             <input type="text" id="inputPassword6" class="form-control"
@@ -49,21 +48,35 @@
                         </div>
                     </div>
                 </div>
-                <hr />
+                <hr class="hr">
                 <div class="personal">
                     <h3>Personal Details:</h3>
                     <div class="row">
-                        <div class="col">
-                            <p>Owner Name:</p>
+                        <div class="col-md-2">
+                            <div class="col-auto mt-3">
+                                <label for="inputPassword6" class="col-form-label">Owner Name:</label>
+                            </div>
                         </div>
-                        <div class="col">
-                            <input type="text" class="form-control" placeholder="First name" aria-label="First name" />
+                        <div class="col-md-3">
+                            <div class="col-auto">
+                                <label for="ownerMiddleName" class="form-label">First Name:</label>
+                                <input type="text" id="inputPassword6" class="form-control"
+                                    aria-describedby="passwordHelpInline" placeholder="First Name">
+                            </div>
                         </div>
-                        <div class="col">
-                            <input type="text" class="form-control" placeholder="Middle name" aria-label="First name" />
+                        <div class="col-md-3">
+                            <div class="col-auto">
+                                <label for="ownerMiddleName" class="form-label">Middle Name:</label>
+                                <input type="text" id="inputPassword6" class="form-control"
+                                    aria-describedby="passwordHelpInline" placeholder="Middle Name">
+                            </div>
                         </div>
-                        <div class="col">
-                            <input type="text" class="form-control" placeholder="Last name" aria-label="Last name" />
+                        <div class="col-md-4">
+                            <div class="col-auto">
+                                <label for="ownerMiddleName" class="form-label">Last Name:</label>
+                                <input type="text" id="inputPassword6" class="form-control"
+                                    aria-describedby="passwordHelpInline" placeholder="Last Name">
+                            </div>
                         </div>
                     </div>
                     <div class="row mt-3">
@@ -72,192 +85,217 @@
                             <input type="date" id="inputPassword6" class="form-control"
                                 aria-describedby="passwordHelpInline" />
                         </div>
-                        <div class="col-md-2">B.S</div>
+                        <div class="col-md-2 mt-2">B.S</div>
                         <div class="col-md-3">
                             <input type="date" id="inputPassword6" class="form-control"
                                 aria-describedby="passwordHelpInline" />
                         </div>
-                        <div class="col-md-2">A.D</div>
+                        <div class="col-md-2 mt-2">A.D</div>
                     </div>
                     <div class="row mt-3">
                         <div class="col-md-2">Gender:</div>
                         <div class="col-md-3">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" />
-                                <label class="form-check-label" for="defaultCheck1">
-                                    Male
-                                </label>
-                            </div>
-                        </div>
-
-                        <div class="col-md-3">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" />
-                                <label class="form-check-label" for="defaultCheck1">
-                                    Female
-                                </label>
-                            </div>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" />
-                                <label class="form-check-label" for="defaultCheck1">
-                                    Other
-                                </label>
-                            </div>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Select</option>
+                                <option value="1">Male</option>
+                                <option value="2">Female</option>
+                                <option value="3">Others</option>
+                            </select>
                         </div>
                     </div>
                     <div class="row mt-3">
                         <div class="col-md-2">Identification Type:</div>
-                        <div class="col-md-2">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" />
-                                <label class="form-check-label" for="defaultCheck1">
-                                    Citizenship
-                                </label>
-                            </div>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" />
-                                <label class="form-check-label" for="defaultCheck1">
-                                    Citizenship
-                                </label>
-                            </div>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" />
-                                <label class="form-check-label" for="defaultCheck1">
-                                    Citizenship
-                                </label>
-                            </div>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" />
-                                <label class="form-check-label" for="defaultCheck1">
-                                    Citizenship
-                                </label>
-                            </div>
-                        </div>
-                        <div class="col-md-1">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" />
-                                <label class="form-check-label" for="defaultCheck1">
-                                    Citizenship
-                                </label>
-                            </div>
+                        <div class="col-md-3">
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Select</option>
+                                <option value="1">CitizenShip</option>
+                                <option value="2">Passport</option>
+                                <option value="3">Driving Licens</option>
+                                <option value="3">Aadhaar Card</option>
+                                <option value="3">Voter ID</option>
+                            </select>
                         </div>
                     </div>
 
                 </div>
                 <div class="row mb-3 mt-3">
-                    <div class="col">
+                    <div class="col-md-6">
                         <label for="identificationNumber" class="form-label">Identification Number:</label>
                         <input type="text" id="identificationNumber" class="form-control"
                             placeholder="Identification number">
                     </div>
-                    <div class="col">
+                    <div class="col-md-6">
                         <label for="panNumber" class="form-label">PAN Number:</label>
                         <input type="text" id="panNumber" class="form-control" placeholder="PAN number">
                     </div>
                 </div>
-                <hr>
+                <hr class="hr">
                 <div class="contact">
                     <h3>Address Details:</h3>
-                    <div class="row g-3 align-items-center">
-                        <div class="col-auto">
-                            <label for="inputPassword6" class="col-form-label">Permanent Address:</label>
+                    <p>Enter Permanent Details:</p>
+                    <div class="row gy-3">
+                        <div class="col-md-2">
+                            <div class="col-auto">
+                                <label for="inputPassword6" class="col-form-label">Permanent Address:</label>
+                            </div>
                         </div>
-                        <div class="col-auto">
-                            <input type="text" id="inputPassword6" class="form-control"
-                                aria-describedby="passwordHelpInline">
+                        <div class="col-md-2">
+                            <div class="col-auto">
+                                <input type="text" id="inputPassword6" class="form-control"
+                                    aria-describedby="passwordHelpInline">
+                            </div>
                         </div>
-                        <div class="col-auto">
-                            <label for="inputPassword6" class="col-form-label">Country:</label>
+                        <div class="col-md-2">
+                            <div class="col-auto">
+                                <label for="inputPassword6" class="col-form-label">Country:</label>
+                            </div>
                         </div>
-                        <div class="col-auto">
-                            <input type="text" id="inputPassword6" class="form-control"
-                                aria-describedby="passwordHelpInline">
+                        <div class="col-md-2">
+                            <div class="col-auto">
+                                <input type="text" id="inputPassword6" class="form-control"
+                                    aria-describedby="passwordHelpInline">
+                            </div>
                         </div>
-                        <div class="col-auto">
-                            <label for="inputPassword6" class="col-form-label">State/Province:</label>
+                        <div class="col-md-2">
+                            <div class="col-auto">
+                                <label for="inputPassword6" class="col-form-label">State/Province:</label>
+                            </div>
                         </div>
-                        <div class="col-auto">
-                            <input type="text" id="inputPassword6" class="form-control"
-                                aria-describedby="passwordHelpInline">
+                        <div class="col-md-2">
+                            <div class="col-auto">
+                                <input type="text" id="inputPassword6" class="form-control"
+                                    aria-describedby="passwordHelpInline">
+                            </div>
                         </div>
-                        <div class="col-auto">
-                            <label for="inputPassword6" class="col-form-label">District:</label>
+                        <div class="col-md-2">
+                            <div class="col-auto">
+                                <label for="inputPassword6" class="col-form-label">District:</label>
+                            </div>
                         </div>
-                        <div class="col-auto">
-                            <input type="text" id="inputPassword6" class="form-control"
-                                aria-describedby="passwordHelpInline">
+                        <div class="col-md-2">
+                            <div class="col-auto">
+                                <input type="text" id="inputPassword6" class="form-control"
+                                    aria-describedby="passwordHelpInline">
+                            </div>
                         </div>
-                        <div class="col-auto">
-                            <label for="inputPassword6" class="col-form-label">City:</label>
+                        <div class="col-md-2">
+                            <div class="col-auto">
+                                <label for="inputPassword6" class="col-form-label">District:</label>
+                            </div>
                         </div>
-                        <div class="col-auto">
-                            <input type="text" id="inputPassword6" class="form-control"
-                                aria-describedby="passwordHelpInline">
+                        <div class="col-md-2">
+                            <div class="col-auto">
+                                <input type="text" id="inputPassword6" class="form-control"
+                                    aria-describedby="passwordHelpInline">
+                            </div>
                         </div>
-                        <div class="col-auto">
-                            <label for="inputPassword6" class="col-form-label">Area:</label>
+                        <div class="col-md-2">
+                            <div class="col-auto">
+                                <label for="inputPassword6" class="col-form-label">City:</label>
+                            </div>
                         </div>
-                        <div class="col-auto">
-                            <input type="text" id="inputPassword6" class="form-control"
-                                aria-describedby="passwordHelpInline">
+                        <div class="col-md-2">
+                            <div class="col-auto">
+                                <input type="text" id="inputPassword6" class="form-control"
+                                    aria-describedby="passwordHelpInline">
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="contact2 mt-4">
-                    <div class="row g-3 align-items-center">
-                        <div class="col-auto">
-                            <label for="inputPassword6" class="col-form-label">Temporary Address:</label>
+                        <div class="col-md-2">
+                            <div class="col-auto">
+                                <label for="inputPassword6" class="col-form-label">Area:</label>
+                            </div>
                         </div>
-                        <div class="col-auto">
-                            <input type="text" id="inputPassword6" class="form-control"
-                                aria-describedby="passwordHelpInline">
-                        </div>
-                        <div class="col-auto">
-                            <label for="inputPassword6" class="col-form-label">Country:</label>
-                        </div>
-                        <div class="col-auto">
-                            <input type="text" id="inputPassword6" class="form-control"
-                                aria-describedby="passwordHelpInline">
-                        </div>
-                        <div class="col-auto">
-                            <label for="inputPassword6" class="col-form-label">State/Province:</label>
-                        </div>
-                        <div class="col-auto">
-                            <input type="text" id="inputPassword6" class="form-control"
-                                aria-describedby="passwordHelpInline">
-                        </div>
-                        <div class="col-auto">
-                            <label for="inputPassword6" class="col-form-label">District:</label>
-                        </div>
-                        <div class="col-auto">
-                            <input type="text" id="inputPassword6" class="form-control"
-                                aria-describedby="passwordHelpInline">
-                        </div>
-                        <div class="col-auto">
-                            <label for="inputPassword6" class="col-form-label">City:</label>
-                        </div>
-                        <div class="col-auto">
-                            <input type="text" id="inputPassword6" class="form-control"
-                                aria-describedby="passwordHelpInline">
-                        </div>
-                        <div class="col-auto">
-                            <label for="inputPassword6" class="col-form-label">Area:</label>
-                        </div>
-                        <div class="col-auto">
-                            <input type="text" id="inputPassword6" class="form-control"
-                                aria-describedby="passwordHelpInline">
+                        <div class="col-md-2">
+                            <div class="col-auto">
+                                <input type="text" id="inputPassword6" class="form-control"
+                                    aria-describedby="passwordHelpInline">
+                            </div>
                         </div>
                     </div>
                 </div>
-                <hr>
+                <div class="contact mt-4">
+                    <p>Enter Temporary Details:</p>
+                    <div class="row gy-3">
+                        <div class="col-md-2">
+                            <div class="col-auto">
+                                <label for="inputPassword6" class="col-form-label">Permanent Address:</label>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="col-auto">
+                                <input type="text" id="inputPassword6" class="form-control"
+                                    aria-describedby="passwordHelpInline">
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="col-auto">
+                                <label for="inputPassword6" class="col-form-label">Country:</label>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="col-auto">
+                                <input type="text" id="inputPassword6" class="form-control"
+                                    aria-describedby="passwordHelpInline">
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="col-auto">
+                                <label for="inputPassword6" class="col-form-label">State/Province:</label>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="col-auto">
+                                <input type="text" id="inputPassword6" class="form-control"
+                                    aria-describedby="passwordHelpInline">
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="col-auto">
+                                <label for="inputPassword6" class="col-form-label">District:</label>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="col-auto">
+                                <input type="text" id="inputPassword6" class="form-control"
+                                    aria-describedby="passwordHelpInline">
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="col-auto">
+                                <label for="inputPassword6" class="col-form-label">District:</label>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="col-auto">
+                                <input type="text" id="inputPassword6" class="form-control"
+                                    aria-describedby="passwordHelpInline">
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="col-auto">
+                                <label for="inputPassword6" class="col-form-label">City:</label>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="col-auto">
+                                <input type="text" id="inputPassword6" class="form-control"
+                                    aria-describedby="passwordHelpInline">
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="col-auto">
+                                <label for="inputPassword6" class="col-form-label">Area:</label>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="col-auto">
+                                <input type="text" id="inputPassword6" class="form-control"
+                                    aria-describedby="passwordHelpInline">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="hr">
                 <div class="contact">
                     <h3>Contact Details:</h3>
                     <div class="row">
@@ -274,7 +312,7 @@
                         </div>
                         <div class="col-md-3">
                             <div class="col-auto">
-                                <label for="inputPassword6" class="col-form-label">Phone Number:</label>
+                                <label for="inputPassword6" class="col-form-label">Land Line:</label>
                             </div>
                         </div>
                         <div class="col-md-3">
@@ -308,66 +346,118 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row mb-3">
-                        <div class="col">
-                            <label for="ownerFirstName" class="form-label">Alternative Contact preson Name:</label>
 
-                        </div>
-                        <div class="col">
-                            <label for="ownerFirstName" class="form-label"> First Name:</label>
-                            <input type="text" id="ownerFirstName" class="form-control" placeholder="First name">
-                        </div>
-                        <div class="col">
-                            <label for="ownerMiddleName" class="form-label">Middle Name:</label>
-                            <input type="text" id="ownerMiddleName" class="form-control" placeholder="Middle name">
-                        </div>
-                        <div class="col">
-                            <label for="ownerLastName" class="form-label">Last Name:</label>
-                            <input type="text" id="ownerLastName" class="form-control" placeholder="Last name">
+
+
+                    <div class="personal ">
+                        <div class="row mt-3">
+                            <div class="col-md-3">
+                                <div class="col-auto mt-3">
+                                    <label for="inputPassword6" class="col-form-label">Alternative Contact Person
+                                        Name:</label>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="col-auto">
+                                    <label for="ownerMiddleName" class="form-label">First Name:</label>
+                                    <input type="text" id="inputPassword6" class="form-control"
+                                        aria-describedby="passwordHelpInline" placeholder="First Name">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="col-auto">
+                                    <label for="ownerMiddleName" class="form-label">Middlw Name:</label>
+                                    <input type="text" id="inputPassword6" class="form-control"
+                                        aria-describedby="passwordHelpInline" placeholder="Middle Name">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="col-auto">
+                                    <label for="ownerMiddleName" class="form-label">Last Name:</label>
+                                    <input type="text" id="inputPassword6" class="form-control"
+                                        aria-describedby="passwordHelpInline" placeholder="Last Name">
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-md-3">Alternative Contact Number:</div>
+                                <div class="col-md-3">
+                                    <input type="text" id="inputPassword6" class="form-control"
+                                        aria-describedby="passwordHelpInline">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <hr>
+                <hr class="hr">
                 <div class="Bank">
                     <h3>Bank Details:</h3>
-                    <div class="row g-2">
-                        <div class="col-auto">
-                            <label for="inputPassword6" class="col-form-label">Bank Name:</label>
-                        </div>
-                        <div class="col-sm-10">
-                            <input type="text" id="inputPassword6" class="form-control"
-                                aria-describedby="passwordHelpInline" />
-                        </div>
-                        <div class="row g-2">
+                    <div class="row gy-3">
+
+                        <div class="col-md-2">
                             <div class="col-auto">
-                                <label for="inputPassword6" class="col-form-label">Bank Branch Address: Name:</label>
+                                <label for="inputPassword6" class="col-form-label">Bank Name:</label>
                             </div>
+                        </div>
+                        <div class="col-md-10">
                             <div class="col-sm-10">
                                 <input type="text" id="inputPassword6" class="form-control"
                                     aria-describedby="passwordHelpInline" />
                             </div>
-                            <label for="inputPassword6" class="col-form-label">Account Name:</label>
                         </div>
-                        <div class="col-sm-10">
-                            <input type="text" id="inputPassword6" class="form-control"
-                                aria-describedby="passwordHelpInline" />
+
+                        <div class="col-md-2">
+                            <div class="col-auto">
+                                <label for="inputPassword6" class="col-form-label">Bank Branch Name:</label>
+                            </div>
                         </div>
-                        <div class="row g-2">
+                        <div class="col-md-10">
+                            <div class="col-sm-10">
+                                <input type="text" id="inputPassword6" class="form-control"
+                                    aria-describedby="passwordHelpInline" />
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="col-md-2">
+                            <div class="col-auto">
+                                <label for="inputPassword6" class="col-form-label">Account Nmae</label>
+                            </div>
+                        </div>
+                        <div class="col-md-10">
+                            <div class="col-sm-10">
+                                <input type="text" id="inputPassword6" class="form-control"
+                                    aria-describedby="passwordHelpInline" />
+                            </div>
+                        </div>
+
+
+
+                        <div class="col-md-2">
                             <div class="col-auto">
                                 <label for="inputPassword6" class="col-form-label">Account Number:</label>
                             </div>
+                        </div>
+                        <div class="col-md-10">
                             <div class="col-sm-10">
                                 <input type="text" id="inputPassword6" class="form-control"
                                     aria-describedby="passwordHelpInline" />
                             </div>
                         </div>
+
+
+
+
+
+
                     </div>
                 </div>
-                <hr>
+                <hr class="hr">
                 <div class="requirment">
                     <h3>Required Document:</h3>
-                    <div class="row mt-3">
-                        <div class="col-md-2">
+                    <div class="row mt-3 gy-1">
+                        <div class="col-md-3">
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" />
                                 <label class="form-check-label" for="defaultCheck1">
@@ -376,7 +466,7 @@
                             </div>
                         </div>
 
-                        <div class="col-md-4">
+                        <div class="col-md-2">
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" />
                                 <label class="form-check-label" for="defaultCheck1">
@@ -444,33 +534,33 @@
                 </div>
             </div>
 
-            <div class="container mt-5">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="file-upload">
-                            <input id="file-input" type="file" class="file-input">
-                            <br>
-                            <label for="file-input" class="file-label">
-                                <span class="label-text">Signature or agent</span>
-                            </label>
+            <!-- <div class="container mt-5"> -->
+            <div class="row mt-5">
+                <div class="col-md-6">
+                    <div class="file-upload">
+                        <input id="file-input" type="file" class="file-input">
+                        <br>
+                        <label for="file-input" class="file-label">
+                            <span class="label-text">Signature or agent</span>
+                        </label>
 
-
-                        </div>
 
                     </div>
-                    <div class="col-md-6 ">
-                        <div class="file-upload">
-                            <input id="file-input" type="file" class="file-input">
-                            <br>
-                            <label for="file-input" class="file-label">
-                                <span class="label-text">Authorize Signature</span>
-                            </label>
 
-
-                        </div>
-
-                    </div>
                 </div>
+                <div class="col-md-6 ">
+                    <div class="file-upload">
+                        <input id="file-input" type="file" class="file-input">
+                        <br>
+                        <label for="file-input" class="file-label">
+                            <span class="label-text">Authorize Signature</span>
+                        </label>
+
+
+                    </div>
+
+                </div>
+                <!-- </div> -->
             </div>
         </form>
     </div>
